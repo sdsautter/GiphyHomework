@@ -5,7 +5,7 @@
  function displayCharacterGifs() {
 
      var gameCharacter = $(this).attr("data-name");
-     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
          gameCharacter + "&api_key=dc6zaTOxFJmzC&limit=10";
 
      // Creating an AJAX call for the specific gameCharacter button being clicked
@@ -31,7 +31,7 @@
              newImg.attr("data-animate", response.data[i].images.fixed_height.url);
 
              newDiv.append(newImg);
-             newDiv.append("<p>Rating: " + response.data[i].rating + "</p>");
+             newDiv.append("<p>Rating: " + response.data[i].rating + "</p><br>");
              $(newRow).append(newDiv);
          }
 
@@ -72,7 +72,7 @@
          // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
          var a = $("<button>");
          // Adding a class of gameCharacter to our button
-         a.addClass("gameCharacter btn btn-success");
+         a.addClass("gameCharacter btn btn-warning");
          // Adding a data-attribute
          a.attr("data-name", gameCharacters[i]);
          // Providing the initial button text
