@@ -1,4 +1,4 @@
-body {
+body, html {
 	background-image: url("../images/bg.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -19,4 +19,12 @@ h3 {
 
 p {
 	color: white;
+}
+
+@media (max-width: 600px) {
+body, html {
+	background-image: url("../images/phone-bg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
