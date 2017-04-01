@@ -5,6 +5,7 @@
  function displayCharacterGifs() {
 
      var gameCharacter = $(this).attr("data-name");
+     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
          gameCharacter + "&api_key=dc6zaTOxFJmzC&limit=10";
 
      // Creating an AJAX call for the specific gameCharacter button being clicked
