@@ -20,7 +20,7 @@
              var newDiv = $("<div>");
 
              newDiv.addClass("characterDiv");
-             newDiv.addClass("col-6");
+             newDiv.addClass("col-12 col-md-6");
 
              var newImg = $("<img>");
 

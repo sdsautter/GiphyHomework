@@ -1,7 +1,22 @@
+body {
+	background-image: url("../images/bg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+
 .characterDiv img {
 	max-width: 100%;
 }
 
 .gameCharacter {
 	margin: 1%;
+}
+
+h3 {
+	color: white;
+}
+
+p {
+	color: white;
 }
