@@ -90,6 +90,7 @@
 
      // Adding gameCharacter from the textbox to our array
      gameCharacters.push(gameCharacter);
+     $("#this-input").val("");
 
      // Calling renderButtons which handles the processing of our gameCharacter array
      renderButtons();
