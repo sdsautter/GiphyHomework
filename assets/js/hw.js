@@ -1,4 +1,4 @@
- // Initial array of gameCharacters
+ // Initial array of game characters
  var gameCharacters = ["Link", "Mario", "Lara Croft", "Master Chief", "Mega Man"];
 
  // displayCharacterGifs function re-renders the HTML to display the appropriate content
@@ -8,7 +8,7 @@
      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
          gameCharacter + "&api_key=dc6zaTOxFJmzC&limit=10";
 
-     // Creating an AJAX call for the specific gameCharacter button being clicked
+     // Creating an AJAX call for the specific game character button being clicked
      $.ajax({
          url: queryURL,
          method: "GET"
@@ -62,22 +62,15 @@
  function renderButtons() {
 
      // Deleting the gameCharacters prior to adding new gameCharacters
-     // (this is necessary otherwise you will have repeat buttons)
      $("#buttons").empty();
 
      // Looping through the array of gameCharacters
      for (var i = 0; i < gameCharacters.length; i++) {
 
-         // Then dynamicaly generating buttons for each gameCharacter in the array
-         // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
          var a = $("<button>");
-         // Adding a class of gameCharacter to our button
          a.addClass("gameCharacter btn btn-warning");
-         // Adding a data-attribute
          a.attr("data-name", gameCharacters[i]);
-         // Providing the initial button text
          a.text(gameCharacters[i]);
-         // Adding the button to the buttons-view div
          $("#buttons").append(a);
      }
  }
@@ -85,14 +78,13 @@
  // This function handles events where a gameCharacter button is clicked
  $("#addCharacters").on("click", function(event) {
      event.preventDefault();
+     
      // This line grabs the input from the textbox
      var gameCharacter = $("#this-input").val().trim();
 
-     // Adding gameCharacter from the textbox to our array
      gameCharacters.push(gameCharacter);
      $("#this-input").val("");
 
-     // Calling renderButtons which handles the processing of our gameCharacter array
      renderButtons();
  });
 
