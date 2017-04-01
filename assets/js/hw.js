@@ -1,5 +1,5 @@
  // Initial array of gameCharacters
- var gameCharacters = ["Link", "Mario", "Lara Croft", "Master Chief"];
+ var gameCharacters = ["Link", "Mario", "Lara Croft", "Master Chief", "Mega Man"];
 
  // displayCharacterGifs function re-renders the HTML to display the appropriate content
  function displayCharacterGifs() {

@@ -1,30 +1,38 @@
-body, html {
-	background-image: url("../images/bg.jpg");
-	background-size: 100%;
-	/*background-repeat: no-repeat;*/
-	background-attachment: fixed;	
+ body,   html {
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .characterDiv img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .gameCharacter {
-	margin: 1%;
+    margin: 1%;
 }
 
 h3 {
-	color: white;
+    color: white;
 }
 
 p {
-	color: white;
+    color: white;
 }
 
 @media (max-width: 600px) {
-body, html {
-	background-image: url("../images/phone-bg.jpg");
-	background-size: 100%;
-	/*background-repeat: no-repeat;*/
-	background-attachment: fixed;
-}
+    body,
+    html {
+        background: url(../images/phone-bg.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+
+    }
