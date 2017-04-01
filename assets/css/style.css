@@ -16,6 +16,10 @@
     margin: 1%;
 }
 
+.gameCharacter:hover {
+	color: #1babc6;
+}
+
 h3 {
     color: white;
 }

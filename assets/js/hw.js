@@ -31,7 +31,7 @@
              newImg.attr("data-animate", response.data[i].images.fixed_height.url);
 
              newDiv.append(newImg);
-             newDiv.append("<p>Rating: " + response.data[i].rating + "</p><br>");
+             newDiv.append("<p>Rating: " + response.data[i].rating.toUpperCase() + "</p><br>");
              $(newRow).append(newDiv);
          }
 
